@@ -393,8 +393,31 @@ hr{
         display:block;
      
     }
-    .images-grid{
-      display:none;
+    .grid-in-card{
+        margin: 10px auto;
+        display:flex;
+         flex-direction: column;
+        justify-content: center;
+        align-content: center;
+     
+     }
+     .grid-img1{
+        background-color: rgb(255, 255, 255);
+        width: 400px;
+        height:300px;
+        border-radius: 15px;
+     }
+     .grid-img2{
+       display:none;
+     }
+     .grid-img3{
+       display: none;
+     }
+     .grid-img4{
+        background-color: rgb(255, 255, 255);
+        width: 400px;
+        height:300px;
+        border-radius: 15px;
      }
      .blog-parent{
         width:auto;
