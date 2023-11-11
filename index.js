@@ -1,15 +1,18 @@
-// // alert("welcome");
-
-// document.getElementById("toggle").addEventListener('click',function(){
-
-//     document.getElementById("toggle-menu").style.display="block"
-
-// })
-// document.getElementById('btnclose').addEventListener('click',function(){
-//     document.getElementById("toggle-menu").style.display="none";
-// })
-// document.getElementById("toggle").addEventListener('click',function(){
-
-//     document.getElementById("toggle-menu").style.display="none"
-
-// })
+function openNav() {
+    document.getElementById("sidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+  }
+  
+  function closeNav() {
+    document.getElementById("sidebar").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+  }
+  
+  document.getElementById("toggleBtn").addEventListener("click", function() {
+    if (document.getElementById("sidebar").style.width === "250px") {
+      closeNav();
+    } else {
+      openNav();
+    }
+  });
+  
